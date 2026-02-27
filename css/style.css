@@ -1,0 +1,144 @@
+/* NoMoreJokes – base styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  background: #fff;
+  color: #222;
+  line-height: 1.7;
+}
+
+a {
+  color: #c0392b;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Layout */
+header, main, footer {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+/* Header */
+header {
+  border-bottom: 2px solid #222;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: -0.5px;
+}
+
+header p.tagline {
+  color: #555;
+  margin-top: 0.25rem;
+  font-size: 0.95rem;
+}
+
+nav {
+  margin-top: 0.75rem;
+}
+
+nav a {
+  margin-right: 1rem;
+  font-size: 0.9rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Hero / intro */
+.intro {
+  margin-bottom: 2.5rem;
+}
+
+.intro h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Article list */
+.article-list {
+  list-style: none;
+}
+
+.article-list li {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 1.25rem 0;
+}
+
+.article-list li:last-child {
+  border-bottom: none;
+}
+
+.article-list h2 {
+  font-size: 1.2rem;
+}
+
+.article-list time {
+  font-size: 0.8rem;
+  color: #888;
+  font-family: Arial, sans-serif;
+}
+
+.article-list p {
+  margin-top: 0.4rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Single article */
+article header {
+  border-bottom: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+article h1 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+article time {
+  font-size: 0.85rem;
+  color: #888;
+  font-family: Arial, sans-serif;
+}
+
+article .content {
+  margin-top: 1.5rem;
+}
+
+article .content p {
+  margin-bottom: 1rem;
+}
+
+article .content h2 {
+  font-size: 1.3rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 2rem;
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #888;
+  font-family: Arial, sans-serif;
+  margin-top: 3rem;
+}
