@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ title }} | NoMoreJokes</title>
+  <meta name="description" content="{{ meta_description }}" />
+  <meta name="keywords" content="{{ keywords }}" />
+  <meta name="author" content="NoMoreJokes" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://senlodigi.github.io/NoMoreJokes/blog/{{ slug }}.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:description" content="{{ meta_description }}" />
+  <meta property="og:url" content="https://senlodigi.github.io/NoMoreJokes/blog/{{ slug }}.html" />
+  <meta property="og:site_name" content="NoMoreJokes" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ title }}" />
+  <meta name="twitter:description" content="{{ meta_description }}" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background: #fafafa;
+      color: #222;
+      line-height: 1.75;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      padding: 1rem 2rem;
+    }
+    header a { color: #fff; text-decoration: none; font-size: 1.4rem; font-weight: bold; }
+    main {
+      max-width: 760px;
+      margin: 2.5rem auto;
+      padding: 0 1.5rem;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #666;
+      margin-bottom: 1.5rem;
+    }
+    h1 { font-size: 2rem; margin-bottom: 0.5rem; line-height: 1.3; }
+    h2 { font-size: 1.4rem; margin: 2rem 0 0.75rem; }
+    h3 { font-size: 1.15rem; margin: 1.5rem 0 0.5rem; }
+    p { margin-bottom: 1.2rem; }
+    .keywords {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.8rem;
+      color: #aaa;
+      border-top: 1px solid #eee;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="/">NoMoreJokes</a>
+  </header>
+
+  <main>
+    <article>
+      <h1>{{ title }}</h1>
+      <p class="meta">Published on {{ date }}</p>
+
+      {{ content }}
+
+      <p class="keywords">Tags: {{ keywords }}</p>
+    </article>
+  </main>
+
+  <footer>
+    &copy; {{ year }} NoMoreJokes &mdash; Clean, fast, SEO-optimized stories.
+  </footer>
+</body>
+</html>
